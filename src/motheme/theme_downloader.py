@@ -44,7 +44,7 @@ def _download_theme(
 
 
 def download_themes(
-    repo_url: str = "https://github.com/metaboulie/marimo-themes",
+    repo_url: str = "https://github.com/Haleshot/marimo-themes",
 ) -> Path | None:
     """
     Download Marimo themes CSS files from GitHub repository.
