@@ -1,0 +1,117 @@
+/* Load Merriweather and Fira Code from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300..900&family=Fira+Code:wght@300..700&display=swap");
+
+/* Font and Radius Variables */
+:root {
+    --monospace-font: "Fira Code", monospace; /* Clean coding font */
+    --text-font: "Merriweather", serif; /* Soft serif for warmth and comfort */
+    --heading-font: "Merriweather", serif; /* Consistent with text font */
+    --radius: 12px; /* Slightly softer corners for a gentler feel */
+}
+
+/* Catppuccin Mocha Theme Colors. */
+:root {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+}
+
+/* As per contribution guidelines, light colors are based off default.css */
+:root {
+  /* Backgrounds & Foregrounds */
+  --background: light-dark(hsl(0deg 0% 100%), var(--ctp-crust));
+  --foreground: light-dark(hsl(222.2deg 47.4% 11.2%), var(--ctp-text));
+
+  /* Muted elements (hover fullscreen, cell action) */
+  --muted: light-dark(hsl(210deg 40% 96.1%), var(--ctp-surface0));
+  --muted-foreground: light-dark(
+    hsl(215.4deg 16.3% 46.9%), 
+    var(--ctp-subtext0)
+  );
+
+  /* Popovers (menus, snippet panels) */
+  --popover: light-dark(hsl(0deg 0% 100%), var(--ctp-base));
+  --popover-foreground: light-dark(
+    hsl(222.2deg 47.4% 11.2%), 
+    var(--ctp-text)
+  );
+
+  /* Cards (even table rows; md tables) */
+  --card: light-dark(hsl(0deg 0% 100%), var(--ctp-surface1));
+  --card-foreground: light-dark(hsl(222.2deg 47.4% 11.2%), var(--ctp-text));
+
+  /* Borders, Inputs */
+  --border: light-dark(hsl(214.3deg 31.8% 91.4%), var(--ctp-blue));
+  --input: light-dark(hsl(0deg 0% 64%), var(--ctp-overlay0));
+
+  /* Primary (machine stats, doc headers) */
+  --primary: light-dark(hsl(208deg 93.5% 47.4%), var(--ctp-mauve));
+  --primary-foreground: light-dark(hsl(210deg 40% 98%), var(--ctp-crust));
+
+  /* Secondary */
+  --secondary: light-dark(hsl(210deg 40% 96.1%), var(--ctp-subtext1));
+  --secondary-foreground: light-dark(
+    hsl(222.2deg 47.4% 11.2%), 
+    var(--ctp-crust)
+  );
+
+  /* Accent (floating outlines, left panels) */
+  --accent: light-dark(hsl(209deg 100% 96.5%), var(--ctp-teal));
+  --accent-foreground: light-dark(hsl(211deg 90% 42%), var(--ctp-crust));
+
+  /* Ring (focus outlines) */
+  --ring: hsl(215deg 20.2% 65.1%);
+
+  /* Destructive actions (delete button) */
+  --destructive: hsl(0deg 100% 70%);
+  --destructive-foreground: light-dark(
+    hsl(210deg 40% 98%), 
+    var(--ctp-crust)
+  );
+
+  /* Feedback colors */
+  --error: var(--ctp-maroon);
+  --error-foreground: var(--ctp-crust);
+  --success: var(--ctp-green);
+  --success-foreground: var(--ctp-crust);
+  --action: var(--ctp-yellow);
+  --action-hover: var(--ctp-peach);
+  --action-foreground: var(--ctp-crust);
+  --link: var(--ctp-sapphire);
+  --link-visited: var(--ctp-pink);
+  --stale: var(--ctp-surface2);
+
+  /* Shadows */
+  --base-shadow: light-dark(
+    hsl(0deg 0% 85% / 40%), 
+    var(--ctp-surface1)
+  );
+  --base-shadow-darker: light-dark(
+    hsl(0deg 0% 50% / 40%), 
+    var(--ctp-surface0)
+  );
+  --base-shadow-opacity: 10%;
+}
