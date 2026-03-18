@@ -1,0 +1,63 @@
+/* Load Source Serif Pro and Cascadia Mono from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300..700&family=Cascadia+Mono:wght@300..700&display=swap");
+
+/* Font and Radius Variables */
+:root {
+    --monospace-font: "Cascadia Mono", monospace;
+    --text-font: "Source Serif Pro", serif;
+    --heading-font: "Source Serif Pro", serif;
+    --radius: 12px;
+}
+
+/* Base colors. */
+:root {
+    --background: light-dark(#fdf6e3, #2b3339);
+    --foreground: light-dark(#5c6a72, #d3c6aa);
+    --muted: light-dark(#f4f0de, #3a4248);
+    --muted-foreground: light-dark(#7c8377, #9da9a0);
+    --popover: light-dark(#fdf6e3, #2b3339);
+    --popover-foreground: light-dark(#5c6a72, #d3c6aa);
+    --card: light-dark(#fffbef, #323944);
+    --card-foreground: light-dark(#5c6a72, #d3c6aa);
+    --border: light-dark(#e9e0c7, #404551);
+    --input: light-dark(#f4f0de, #323944);
+    --primary: light-dark(#8da101, #a7c080);
+    --primary-foreground: light-dark(#fdf6e3, #2b3339);
+    --secondary: light-dark(#bec5b2, #859289);
+    --secondary-foreground: light-dark(#5c6a72, #d3c6aa);
+    --accent: light-dark(#35a77c, #83c092);
+    --accent-foreground: light-dark(#fdf6e3, #2b3339);
+    --ring: light-dark(#8da101, #a7c080);
+}
+
+/* Semantic colors. */
+:root {
+    --destructive: light-dark(#e24242, #e67e80);
+    --destructive-foreground: light-dark(#fdf6e3, #2b3339);
+    --error: light-dark(#f85552, #e67e80);
+    --error-foreground: light-dark(#fdf6e3, #2b3339);
+    --success: light-dark(#8da101, #a7c080);
+    --success-foreground: light-dark(#fdf6e3, #2b3339);
+    --action: light-dark(#dfa000, #dbbc7f);
+    --action-hover: light-dark(#e6a700, #e0c087);
+    --action-foreground: light-dark(#5c6a72, #2b3339);
+    --link: light-dark(#4c9882, #7fbbb3);
+    --link-visited: light-dark(#ad7fa8, #d699b6);
+    --stale: light-dark(
+        hsl(42deg 56% 44% / 25%),
+        hsl(42deg 56% 44% / 25%)
+    );
+}
+
+/* Base shadows. */
+:root {
+    --base-shadow: light-dark(
+        hsla(35, 30%, 70%, 30%),
+        hsla(180, 15%, 5%, 40%)
+    );
+    --base-shadow-darker: light-dark(
+        hsla(35, 30%, 50%, 40%),
+        hsla(180, 15%, 5%, 60%)
+    );
+    --base-shadow-opacity: 8%;
+} 
