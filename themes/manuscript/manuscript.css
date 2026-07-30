@@ -1,0 +1,154 @@
+/* Load EB Garamond, Spectral and IBM Plex Mono from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Spectral:ital,wght@0,300;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+/* Font and Radius Variables */
+:root {
+    --monospace-font: "IBM Plex Mono", monospace; /* Typewriter-ish listings */
+    --text-font: "EB Garamond", Georgia, serif; /* Compact old-style body serif */
+    --heading-font: "Spectral", Georgia, serif; /* Sturdier serif for headings */
+    --radius: 3px; /* Sharp corners, like a printed page */
+
+    /* A slightly wider measure than marimo's 740px default: dense serif text
+       fits more words per line, so the column can afford the extra room. */
+    --content-width: 860px;
+    --content-width-medium: 1200px;
+}
+
+/* Base Colors — ink on paper (light) / ink on slate (dark) */
+:root {
+    --background: light-dark(#fdfbf6, #1a1816);
+    --background-darker: light-dark(#f2ede1, #131211);
+    --foreground: light-dark(#1c1a17, #e9e3d6);
+    --muted: light-dark(#f1ece0, #24211d);
+    --muted-foreground: light-dark(#6d6555, #a49b89);
+    --popover: light-dark(#fbf8f1, #211e1a);
+    --popover-foreground: light-dark(#1c1a17, #e9e3d6);
+    --card: light-dark(#f7f3ea, #211e1a);
+    --card-foreground: light-dark(#26221c, #ded7c8);
+    --border: light-dark(#ddd4c2, #38332b);
+    --input: light-dark(#c8bda7, #4a4237);
+    --primary: light-dark(#7c2128, #c2717a); /* Journal maroon */
+    --primary-foreground: light-dark(#fdfbf6, #1a1816);
+    --secondary: light-dark(#e8e1d1, #2e2a24);
+    --secondary-foreground: light-dark(#1c1a17, #e9e3d6);
+    --accent: light-dark(#eae3d2, #33475c); /* Faded parchment / ink blue */
+    --accent-foreground: light-dark(#3a4a63, #cfdcea);
+    --ring: light-dark(#a89a80, #6b6252);
+}
+
+/* Semantic Colors */
+:root {
+    --destructive: light-dark(#a03028, #c6564c);
+    --destructive-foreground: #fdfbf6;
+    --error: light-dark(#9c2f26, #d0736a);
+    --error-foreground: #fdfbf6;
+    --success: light-dark(#4a6b3d, #8fae78);
+    --success-foreground: #fdfbf6;
+    --action: light-dark(#e6d9a8, #6d6033); /* Highlighter-pen yellow */
+    --action-hover: light-dark(#efe5bd, #7d6f3c);
+    --action-foreground: light-dark(#5a4a12, #f3ead0);
+    --link: light-dark(#8c2f39, #d3919a); /* hyperref maroon */
+    --link-visited: light-dark(#5f3a6b, #b892c4);
+    --stale: hsl(38deg 45% 45% / 22%);
+}
+
+/* Shadows — barely there, paper doesn't float */
+:root {
+    --base-shadow: light-dark(
+        hsla(35deg, 20%, 60%, 25%),
+        hsla(0deg, 0%, 0%, 55%)
+    );
+    --base-shadow-darker: light-dark(
+        hsla(35deg, 25%, 40%, 35%),
+        hsla(0deg, 0%, 0%, 70%)
+    );
+    --base-shadow-opacity: 3%;
+}
+
+/* Typography: dense, justified prose in the manner of a printed article. */
+.markdown {
+    font-size: 1.08rem;
+    line-height: 1.42;
+    text-align: justify;
+    text-wrap: pretty;
+    hyphens: auto;
+}
+
+.markdown p {
+    margin-block: 0.45em;
+}
+
+/* Indent successive paragraphs instead of spacing them out. */
+.markdown p + p {
+    text-indent: 1.4em;
+    margin-block-start: 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    margin-block: 0.8em 0.35em;
+    line-height: 1.2;
+    text-align: left;
+    hyphens: none;
+}
+
+/* The top-level heading reads as a paper title. */
+.markdown h1 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-block: 0.4em 0.6em;
+}
+
+.markdown h2,
+.markdown h3 {
+    font-variant-caps: small-caps;
+    letter-spacing: 0.02em;
+}
+
+.markdown ul,
+.markdown ol {
+    margin-block: 0.45em;
+    text-align: left;
+}
+
+.markdown li {
+    margin-block: 0.15em;
+}
+
+/* Block quotes as indented extracts, not decorated callouts. */
+.markdown blockquote {
+    margin-inline: 1.6em 0.8em;
+    font-size: 0.96em;
+    font-style: italic;
+}
+
+/* Tables in the journal manner: horizontal rules only. */
+.markdown table {
+    font-size: 0.94em;
+    border-collapse: collapse;
+}
+
+.markdown table th,
+.markdown table td {
+    padding-block: 0.25em;
+    text-align: left;
+    hyphens: none;
+}
+
+/* Keep code and math out of the justification. */
+.markdown pre,
+.markdown code,
+.markdown .katex-display {
+    text-align: left;
+    hyphens: none;
+}
+
+.markdown pre {
+    font-size: 0.9em;
+    line-height: 1.4;
+}

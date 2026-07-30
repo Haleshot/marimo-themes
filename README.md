@@ -33,6 +33,13 @@
     <img src="themes/wigwam/wigwam_dark.png" alt="wigwam dark" width="400"/>
 </div>
 
+### <a href="themes/manuscript/">manuscript</a>
+
+<div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+    <img src="themes/manuscript/manuscript_light.png" alt="manuscript light" width="400" "/>
+    <img src="themes/manuscript/manuscript_dark.png" alt="manuscript dark" width="400"/>
+</div>
+
 ## Get Started
 
 ```bash
