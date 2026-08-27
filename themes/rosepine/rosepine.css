@@ -1,0 +1,109 @@
+/* Rosé Pine Theme for marimo */
+/* Palette: https://rosepinetheme.com/palette */
+/* Light: Rosé Pine Dawn | Dark: Rosé Pine (Main) */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@300..800&display=swap");
+
+/* Font and Radius Variables */
+:root {
+    --monospace-font: "JetBrains Mono", monospace;
+    --text-font: "Inter", sans-serif;
+    --heading-font: "Inter", sans-serif;
+    --radius: 8px;
+}
+
+/* Rosé Pine Palette Variables */
+:root {
+    /* Main (Dark) */
+    --rp-base: #191724;
+    --rp-surface: #1F1D2E;
+    --rp-overlay: #26233A;
+    --rp-muted: #6E6A86;
+    --rp-subtle: #908CAA;
+    --rp-text: #E0DEF4;
+    --rp-love: #EB6F92;
+    --rp-gold: #F6C177;
+    --rp-rose: #EBBCBA;
+    --rp-pine: #31748F;
+    --rp-foam: #9CCFD8;
+    --rp-iris: #C4A7E7;
+    --rp-highlight-low: #21202E;
+    --rp-highlight-med: #403D52;
+    --rp-highlight-high: #524F67;
+
+    /* Dawn (Light) */
+    --rpd-base: #FAF4ED;
+    --rpd-surface: #FFFAF3;
+    --rpd-overlay: #F2E9E1;
+    --rpd-muted: #9897A5;
+    --rpd-subtle: #797593;
+    --rpd-text: #575279;
+    --rpd-love: #B4637A;
+    --rpd-gold: #EA9D34;
+    --rpd-rose: #D7827E;
+    --rpd-pine: #286983;
+    --rpd-foam: #56949F;
+    --rpd-iris: #907AA9;
+    --rpd-highlight-low: #F4EDE8;
+    --rpd-highlight-med: #DFDAD9;
+    --rpd-highlight-high: #CECABC;
+}
+
+/* Theme Colors */
+:root {
+    --background: light-dark(var(--rpd-base), var(--rp-base));
+    --foreground: light-dark(var(--rpd-text), var(--rp-text));
+
+    --muted: light-dark(var(--rpd-overlay), var(--rp-overlay));
+    --muted-foreground: light-dark(var(--rpd-subtle), var(--rp-subtle));
+
+    --popover: light-dark(var(--rpd-surface), var(--rp-surface));
+    --popover-foreground: light-dark(var(--rpd-text), var(--rp-text));
+
+    --card: light-dark(var(--rpd-surface), var(--rp-surface));
+    --card-foreground: light-dark(var(--rpd-text), var(--rp-text));
+
+    --border: light-dark(var(--rpd-highlight-med), var(--rp-highlight-med));
+    --input: light-dark(var(--rpd-highlight-low), var(--rp-highlight-low));
+
+    --primary: light-dark(var(--rpd-foam), var(--rp-foam));
+    --primary-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --secondary: light-dark(var(--rpd-overlay), var(--rp-overlay));
+    --secondary-foreground: light-dark(var(--rpd-text), var(--rp-text));
+
+    --accent: light-dark(var(--rpd-iris), var(--rp-iris));
+    --accent-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --ring: light-dark(var(--rpd-foam), var(--rp-foam));
+
+    /* Semantic Colors */
+    --destructive: light-dark(var(--rpd-love), var(--rp-love));
+    --destructive-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --error: light-dark(var(--rpd-love), var(--rp-love));
+    --error-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --success: light-dark(var(--rpd-pine), var(--rp-pine));
+    --success-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --action: light-dark(var(--rpd-gold), var(--rp-gold));
+    --action-hover: light-dark(var(--rpd-rose), var(--rp-rose));
+    --action-foreground: light-dark(var(--rpd-base), var(--rp-base));
+
+    --link: light-dark(var(--rpd-iris), var(--rp-iris));
+    --link-visited: light-dark(var(--rpd-rose), var(--rp-rose));
+
+    --stale: light-dark(var(--rpd-highlight-low), var(--rp-highlight-low));
+
+    /* Shadows */
+    --base-shadow: light-dark(
+        rgba(87, 82, 121, 0.08),
+        rgba(25, 23, 36, 0.4)
+    );
+    --base-shadow-darker: light-dark(
+        rgba(87, 82, 121, 0.15),
+        rgba(25, 23, 36, 0.6)
+    );
+    --base-shadow-opacity: 8%;
+}
